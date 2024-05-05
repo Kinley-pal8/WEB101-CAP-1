@@ -1,0 +1,103 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply font-family to specific elements */
+body, .brand-logo, .nav-links li a, .pokemon-card .pokemon-name {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5; /* Set background color for the body */
+}
+
+.container {
+    max-width: 1200px; /* Set max width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add horizontal padding to the container */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #ff0800; /* Set background color for the navbar */
+    padding: 20px 0; /* Add padding to the navbar */
+}
+
+.brand-logo {
+    font-size: 1.5rem; /* Set font size for the brand logo */
+    color: #fff; /* Set text color for the brand logo */
+    text-decoration: none; /* Remove underline from the brand logo */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list style from the navigation links */
+    float: right; /* Float the navigation links to the right */
+}
+
+.nav-links li {
+    display: inline-block; /* Display navigation links inline */
+    margin-left: 20px; /* Add left margin between navigation links */
+}
+
+.nav-links li a {
+    color: #fff; /* Set text color for navigation links */
+    text-decoration: none; /* Remove underline from navigation links */
+    transition: color 0.3s ease; /* Add transition effect for text color */
+}
+
+.nav-links li a:hover {
+    color: #f8f9fa; /* Change text color on hover */
+}
+
+/* Pokemon card styles */
+.pokemon-card {
+    background-color: #fff; /* Set background color for Pokemon card */
+    border-radius: 8px; /* Add border radius to Pokemon card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow to Pokemon card */
+    transition: transform 0.3s ease; /* Add transition effect for transform */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px); /* Move Pokemon card up on hover */
+}
+
+.pokemon-card img {
+    width: 100%; /* Set image width to 100% */
+    border-top-left-radius: 8px; /* Add border radius to top left corner of image */
+    border-top-right-radius: 8px; /* Add border radius to top right corner of image */
+}
+
+.pokemon-card .pokemon-name {
+    padding: 10px; /* Add padding to Pokemon name */
+    font-size: 1.2rem; /* Set font size for Pokemon name */
+    font-weight: bold; /* Set font weight for Pokemon name */
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 30px; /* Add top margin for pagination */
+    text-align: center; /* Align pagination center */
+}
+
+.pagination button {
+    margin: 0 5px; /* Add horizontal margin to pagination buttons */
+    padding: 8px 16px; /* Add padding to pagination buttons */
+    background-color: #ff0000; /* Set background color for pagination buttons */
+    color: #fff; /* Set text color for pagination buttons */
+    border: none; /* Remove border from pagination buttons */
+    border-radius: 4px; /* Add border radius to pagination buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect for background color */
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.pagination button.active {
+    background-color: #0056b3; /* Set background color for active pagination button */
+}

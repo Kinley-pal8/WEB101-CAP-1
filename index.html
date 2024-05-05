@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://toppng.com/uploads/preview/pokemon-logo-logo-png-file-11661032802efrc0o8jqu.png" />
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Custom CSS -->
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <nav class="nav-extended red darken-2">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Pokedex</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#" id="showAllBtn">Show All</a></li> <!-- Button to show all Pokémon -->
+                    <li>
+                        <!-- Search input field -->
+                        <div class="input-field">
+                            <input id="searchInput" type="search" placeholder="Search">
+                            <label class="label-icon" for="searchInput"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile navigation -->
+        <ul class="sidenav" id="mobile">
+            <li><a href="#" id="showAllBtn">Show All</a></li>
+            <li>
+                <div class="input-field">
+                    <input id="searchInputMobile" type="search" placeholder="">
+                    <label class="label-icon" for="searchInputMobile"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!-- Main content -->
+    <main>
+        <div class="container">
+            <!-- Grid to display Pokémon -->
+            <div class="row" id="pokemonGrid"></div>
+            <!-- Pagination buttons -->
+            <div id="pagination" class="center-align">
+                <button id="prevButton" class="pagination-btn">Previous</button>
+                <button id="nextButton" class="pagination-btn">Next</button>
+            </div>
+        </div>
+        <!-- Modal to display detailed Pokémon information -->
+        <div id="modalPokemonInfo" class="modal"></div>
+    </main>
+    <!-- External JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
